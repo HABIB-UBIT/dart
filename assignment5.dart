@@ -51,6 +51,21 @@
 //   print("Greatest number: $greatest");
 // }
 
+// //Q.9: Given a list of integers, write a dart code that returns the maximum value from the list.
+// void main(){
+//   List<int> numbers = [10, 20, 5, 30, 15];
+  
+//   int maxValue = numbers[0];
+
+//   for (int number in numbers) {
+//     if (number > maxValue) {
+//       maxValue = number;
+//     }
+//   }
+
+//   print("Maximum value in the list: $maxValue");
+// }
+
 // //Q.10: Write a Dart code that takes in a list of strings and removes any duplicate elements, returning a new list without duplicates. The order of elements in the new list should be the same as in the original list.
 
 // void main(){
@@ -110,3 +125,42 @@
 //   print("Original list: $originalList");
 //   print("Unique elements: $uniqueList");
 // }
+
+// //Q.14: Write a Dart code that takes in a list of integers and prints a new list with the elements sorted in ascending order. The original list should remain unchanged.
+// void main(){
+//   List<int> originalList = [34, 12, 5, 67, 23];
+//   List<int> sortedList = List.from(originalList); 
+
+//   sortedList.sort(); 
+
+//   print("Original list: $originalList");
+//   print("Sorted list: $sortedList");
+// }
+
+
+// //Q.15: Implement a Dart code that uses the where() method to filter out negative numbers from a list of integers. The program should take in the original list as a parameter and print a new list containing only the positive numbers
+// void main(){
+//   List<int> numbers = [-10, 5, -3, 8, 0, -1, 12];
+//   List<int> positiveNumbers = [];
+//   for (int number in numbers) {
+//     if (number >= 0) {
+//       positiveNumbers.add(number);
+//     }
+//   }
+//   print("Positive numbers: $positiveNumbers");
+// }
+
+// //Q.16: Implement a Dart code that uses the where() method to filter out odd numbers from a list of integers. The program should take in the original list as a parameter and print a new list containing only the even numbers.
+// void main(){
+//   List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//   List<int> evenNumbers = [];
+
+//   for (int number in numbers) {
+//     if (number % 2 == 0) {
+//       evenNumbers.add(number);
+//     }
+//   }
+
+//   print("Even numbers: $evenNumbers");
+// }
+
