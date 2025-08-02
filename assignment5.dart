@@ -198,3 +198,53 @@
 
 //   print(world["Pakistan"]); 
 // }
+
+// void main(){
+
+//   List<String> names = ["habib", "ahmed", "ali", "sami", "sara"];
+//   for (int i = 0; i < names.length; i++) {
+//     print(names[i]);
+//   }
+// }
+
+
+import 'dart:io';
+void main(){
+  print("Enter Email");
+  String email = stdin.readLineSync()!;
+  print("Enter Password");
+  String password = stdin.readLineSync()!;
+  bool isloginSuccessful = false;
+  int times=1;
+  while (!isloginSuccessful) {
+    if (email == "habib123" && password == "habib@123") {
+      print("Login successful");
+      isloginSuccessful = true;
+      print("Do you want to print table? (yes/no)");
+      String response = stdin.readLineSync()!;
+      while (response == "yes") {
+        print("Enter a number to print its multiplication table:");
+        int number = int.parse(stdin.readLineSync()!);
+        for (int i = 1; i <= 10; i++) {
+          print("$number x $i = ${number * i}");
+        }
+        print("Do you want to print another table? (yes/no)");
+        response = stdin.readLineSync()!;
+        if (response != "yes") {
+          print("Thank you so much!");
+          break;
+        }
+      }
+    }else if(times ==3){
+      print("You have exceeded the maximum number of attempts. Please try again later.");
+      break;
+    }else {
+      print("Invalid email or password. Please try again.");
+      print("Enter Email");
+      email = stdin.readLineSync()!;
+      print("Enter Password");
+      password = stdin.readLineSync()!;
+    }
+    times++;
+}
+}
