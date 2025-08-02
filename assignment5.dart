@@ -164,3 +164,37 @@
 //   print("Even numbers: $evenNumbers");
 // }
 
+// //Q.5: Create a map with name, phone keys and store some values to it. Use where to find all keys that have length 4.
+// void main(){
+//   Map<String, dynamic> person={
+//     "name":"Habib",
+//     "phone":"0301",
+//     "age":23
+//   };
+    
+//   var filteredKeys = person.keys.where((key) => key.length == 4);
+//   print("Keys with length 4: $filteredKeys");
+// }
+
+// //Q.6: Create Map variable name world then inside it create countries Map, Key will be the name country & country value will have another map having capitalCity, currency and language to it. by using any country key print all the value of Capital & Currency.
+// void main(){
+//   Map<String, dynamic> world = {
+//     "Pakistan": {
+//       "capitalCity": "Islamabad",
+//       "currency": "PKR",
+//       "language": "Urdu"
+//     },
+//     "USA": {
+//       "capitalCity": "Washington, D.C.",
+//       "currency": "USD",
+//       "language": "English"
+//     },
+//     "Japan": {
+//       "capitalCity": "Tokyo",
+//       "currency": "JPY",
+//       "language": "Japanese"
+//     }
+//   };
+
+//   print(world["Pakistan"]); 
+// }
